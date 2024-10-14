@@ -32,7 +32,7 @@ public class Prueba extends JFrame{
 
         confirmar.addActionListener((e) -> {
             if (correo.isShowing() && plataforma.isShowing() && pais.isShowing()) {
-                model.addRow(new Object[]{correo.getText(),plataforma.getSelectedItem().toString(),pais.getSelectedItem().toString()});
+                model.addRow(new Object[]{correo.getText(),pais.getSelectedItem().toString(),plataforma.getSelectedItem().toString()});
             }
         });
     }
